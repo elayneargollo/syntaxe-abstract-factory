@@ -6,5 +6,5 @@ import javax.swing.JFrame;
 
 public interface IFactory {
 	public abstract IBuilder createCompiler(File file);
-	public abstract ISyntaxe create(File file);
+	public abstract ISyntaxHighlighter create(File file);
 }

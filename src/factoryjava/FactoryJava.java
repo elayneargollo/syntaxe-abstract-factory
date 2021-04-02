@@ -4,7 +4,7 @@ import java.io.File;
 
 import interfaces.IBuilder;
 import interfaces.IFactory;
-import interfaces.ISyntaxe;
+import interfaces.ISyntaxHighlighter;
 
 
 public class FactoryJava implements IFactory {
@@ -15,8 +15,8 @@ public class FactoryJava implements IFactory {
 	}
 
 	@Override
-	public ISyntaxe create(File file) {
-		return new SyntaxeJava();
+	public ISyntaxHighlighter create(File file) {
+		return new SyntaxHighlighterJava();
 	}
 
 }

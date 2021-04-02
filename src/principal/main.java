@@ -9,7 +9,7 @@ import javax.swing.border.EmptyBorder;
 
 import interfaces.IBuilder;
 import interfaces.IFactory;
-import interfaces.ISyntaxe;
+import interfaces.ISyntaxHighlighter;
 
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
@@ -39,7 +39,7 @@ public class main extends JFrame {
 	private ArrayList<String> extensionsValid = new ArrayList<>();
 	private IFactory factory;
 	private IBuilder builder;
-	private ISyntaxe syntaxe;
+	private ISyntaxHighlighter syntaxe;
 
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
